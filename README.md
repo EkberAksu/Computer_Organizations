@@ -12,8 +12,8 @@ Course Book: Computer Organization and Design: The Hardware/Software Interface,
 
 Projects:
 
-Project 1: a digital circuit that detects which of the two 5-bit input numbers (InA and InB) is larger.
+Project 1: a digital circuit that detects which of the two 5-bit input numbers (InA and InB) is larger (Structural Verilog & Assembly)
 
-Project 2: assembler for MIPS( implemented in c++)
+Project 2: assembler for MIPS (c++)
 
-Project 3: Single Cycle CPU (Implemented 22 instructions)
+Project 3: Single Cycle CPU (Implemented 22 instructions) (Structural Verilog)
