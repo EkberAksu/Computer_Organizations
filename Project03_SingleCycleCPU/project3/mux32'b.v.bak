@@ -1,0 +1,40 @@
+module mux32bit(output5bit, select, input_1, input_2);
+
+input [31:0] input_1, input_2;
+input select;
+output [31:0] output5bit;
+
+mux1_2to1 select0(output5bit[0], select, input_1[0], input_2[0]);
+mux1_2to1 select1(output5bit[1], select, input_1[1], input_2[1]);
+mux1_2to1 select2(output5bit[2], select, input_1[2], input_2[2]);
+mux1_2to1 select3(output5bit[3], select, input_1[3], input_2[3]);
+mux1_2to1 select4(output5bit[4], select, input_1[4], input_2[4]);
+mux1_2to1 select5(output5bit[5], select, input_1[5], input_2[5]);
+mux1_2to1 select6(output5bit[6], select, input_1[6], input_2[6]);
+mux1_2to1 select7(output5bit[7], select, input_1[7], input_2[7]);
+mux1_2to1 select8(output5bit[8], select, input_1[8], input_2[8]);
+mux1_2to1 select9(output5bit[9], select, input_1[9], input_2[9]);
+mux1_2to1 select10(output5bit[10], select, input_1[10], input_2[10]);
+mux1_2to1 select11(output5bit[11], select, input_1[11], input_2[11]);
+mux1_2to1 select12(output5bit[12], select, input_1[12], input_2[12]);
+mux1_2to1 select13(output5bit[13], select, input_1[13], input_2[13]);
+mux1_2to1 select14(output5bit[14], select, input_1[14], input_2[14]);
+mux1_2to1 select15(output5bit[15], select, input_1[15], input_2[15]);
+mux1_2to1 select16(output5bit[16], select, input_1[16], input_2[16]);
+mux1_2to1 select17(output5bit[17], select, input_1[17], input_2[17]);
+mux1_2to1 select18(output5bit[18], select, input_1[18], input_2[18]);
+mux1_2to1 select19(output5bit[19], select, input_1[19], input_2[19]);
+mux1_2to1 select20(output5bit[20], select, input_1[20], input_2[20]);
+mux1_2to1 select21(output5bit[21], select, input_1[21], input_2[21]);
+mux1_2to1 select22(output5bit[22], select, input_1[22], input_2[22]);
+mux1_2to1 select23(output5bit[23], select, input_1[23], input_2[23]);
+mux1_2to1 select24(output5bit[24], select, input_1[24], input_2[24]);
+mux1_2to1 select25(output5bit[25], select, input_1[25], input_2[25]);
+mux1_2to1 select26(output5bit[26], select, input_1[26], input_2[26]);
+mux1_2to1 select27(output5bit[27], select, input_1[27], input_2[27]);
+mux1_2to1 select28(output5bit[28], select, input_1[28], input_2[28]);
+mux1_2to1 select29(output5bit[29], select, input_1[29], input_2[29]);
+mux1_2to1 select30(output5bit[30], select, input_1[30], input_2[30]);
+mux1_2to1 select31(output5bit[31], select, input_1[31], input_2[31]);
+
+endmodule

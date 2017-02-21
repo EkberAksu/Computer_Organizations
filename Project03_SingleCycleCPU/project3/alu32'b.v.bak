@@ -1,0 +1,45 @@
+module alu32(carry_out_last, Z, a, b, less, carry_in, ALUop);
+
+input [31:0] a, b, r;
+input [2:0] ALUop;
+input less;
+wire [31:0] carry_out;
+output carry_out_last;
+output Z;
+
+alu1 alu1_0(carry_out[0], r[0], a[0], b[0], less, ALUop[2], ALUop);
+alu1 alu1_1(carry_out[1], r[1], a[1], b[1], 0, carry_out[0], ALUop); // carry_out[0] is actually carry_in[1]
+alu1 alu1_2(carry_out[2], r[2], a[2], b[2], 0, carry_out[1], ALUop); 
+alu1 alu1_3(carry_out[3], r[3], a[3], b[3], 0, carry_out[2], ALUop); 
+alu1 alu1_4(carry_out[4], r[4], a[4], b[4], 0, carry_out[3], ALUop); 
+alu1 alu1_5(carry_out[5], r[5], a[5], b[5], 0, carry_out[4], ALUop); 
+alu1 alu1_6(carry_out[6], r[6], a[2], b[2], 0, carry_out[5], ALUop); 
+alu1 alu1_7(carry_out[7], r[7], a[2], b[2], 0, carry_out[6], ALUop); 
+alu1 alu1_8(carry_out[8], r[8], a[2], b[2], 0, carry_out[7], ALUop); 
+alu1 alu1_9(carry_out[9], r[9], a[2], b[2], 0, carry_out[8], ALUop); 
+alu1 alu1_10(carry_out[10], r[10], a[10], b[10], 0, carry_out[9], ALUop); 
+alu1 alu1_11(carry_out[11], r[11], a[11], b[11], 0, carry_out[10], ALUop); 
+alu1 alu1_12(carry_out[12], r[12], a[12], b[12], 0, carry_out[11], ALUop); 
+alu1 alu1_13(carry_out[13], r[13], a[13], b[13], 0, carry_out[12], ALUop); 
+alu1 alu1_14(carry_out[14], r[14], a[14], b[14], 0, carry_out[13], ALUop); 
+alu1 alu1_15(carry_out[15], r[15], a[15], b[15], 0, carry_out[14], ALUop); 
+alu1 alu1_16(carry_out[16], r[16], a[16], b[16], 0, carry_out[15], ALUop); 
+alu1 alu1_17(carry_out[17], r[17], a[17], b[17], 0, carry_out[16], ALUop); 
+alu1 alu1_18(carry_out[18], r[18], a[18], b[18], 0, carry_out[17], ALUop); 
+alu1 alu1_19(carry_out[19], r[19], a[19], b[19], 0, carry_out[18], ALUop); 
+alu1 alu1_20(carry_out[20], r[20], a[20], b[20], 0, carry_out[19], ALUop); 
+
+alu1 alu1_21(carry_out[21], r[21], a[21], b[21], 0, carry_out[20], ALUop); 
+alu1 alu1_22(carry_out[22], r[22], a[22], b[22], 0, carry_out[21], ALUop); 
+alu1 alu1_23(carry_out[23], r[23], a[23], b[23], 0, carry_out[22], ALUop); 
+alu1 alu1_24(carry_out[24], r[24], a[24], b[24], 0, carry_out[23], ALUop); 
+alu1 alu1_25(carry_out[25], r[25], a[25], b[25], 0, carry_out[24], ALUop); 
+alu1 alu1_26(carry_out[26], r[26], a[26], b[26], 0, carry_out[25], ALUop); 
+alu1 alu1_27(carry_out[27], r[27], a[27], b[27], 0, carry_out[26], ALUop); 
+alu1 alu1_28(carry_out[28], r[28], a[28], b[28], 0, carry_out[27], ALUop); 
+alu1 alu1_29(carry_out[29], r[29], a[29], b[29], 0, carry_out[28], ALUop); 
+alu1 alu1_30(carry_out[30], r[30], a[30], b[30], 0, carry_out[29], ALUop); 
+alu1 alu1_31(carry_out[31], r[31], a[31], b[31], 0, carry_out[30], ALUop); 
+
+
+endmodule

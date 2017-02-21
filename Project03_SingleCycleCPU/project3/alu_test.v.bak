@@ -1,0 +1,106 @@
+module testproject01();
+
+reg a; //a 5 bitlik ilk sayidir
+reg b; //b 5 bitlik ikinci sayidir
+wire sum,CarryOut; //r sonucu donduren 2 bitlik sayidir
+reg [2:0] aluopp;
+bit1_alu test(CarryOut, sum, a, b, 0, aluopp[2], aluopp);
+
+initial begin $monitor("a=%b  b=%b cout=%b  sum=%b aluOP=%3b", a, b, CarryOut, sum, aluopp);
+
+  aluopp[2]=0;
+  aluopp[1]=0;
+  aluopp[0]=0;
+  a=1;
+  b=1;
+#50
+
+  
+  aluopp[2]=0;
+  aluopp[1]=0;
+  aluopp[0]=0;
+  a=0;
+  b=0;
+  
+#50
+  aluopp[2]=0;
+  aluopp[1]=0;
+  aluopp[0]=0;
+  a=1;
+  b=0;
+  
+#50
+
+  aluopp[2]=0;
+  aluopp[1]=0;
+  aluopp[0]=0;
+  a=0;
+  b=1;
+  
+#50
+
+  aluopp[2]=0;
+  aluopp[1]=0;
+  aluopp[0]=1;
+  a=1;
+  b=1;
+#50
+
+  
+  aluopp[2]=0;
+  aluopp[1]=0;
+  aluopp[0]=1;
+  a=0;
+  b=0;
+  
+#50
+  aluopp[2]=0;
+  aluopp[1]=0;
+  aluopp[0]=1;
+  a=1;
+  b=0;
+  
+#50
+
+  aluopp[2]=0;
+  aluopp[1]=0;
+  aluopp[0]=1;
+  a=0;
+  b=1;
+  
+#50
+
+  aluopp[2]=0;
+  aluopp[1]=1;
+  aluopp[0]=0;
+  a=1;
+  b=1;
+#50
+
+  
+  aluopp[2]=0;
+  aluopp[1]=1;
+  aluopp[0]=0;
+  a=0;
+  b=0;
+  
+#50
+  aluopp[2]=0;
+  aluopp[1]=1;
+  aluopp[0]=0;
+  a=1;
+  b=0;
+  
+#50
+
+  aluopp[2]=0;
+  aluopp[1]=1;
+  aluopp[0]=0;
+  a=0;
+  b=1;
+
+
+end
+
+  
+endmodule
