@@ -1,0 +1,25 @@
+Quartus II Archive log --	F:/CSE 331 Computer Organization/homework/Aizezi_Aikeboer_131044086.qarlog
+
+Archive:	F:/CSE 331 Computer Organization/homework/Aizezi_Aikeboer_131044086.qar
+Date:		Fri Oct 21 16:51:10 2016
+Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/altera/13.1/db/project01.cmp.hdb
+C:/altera/13.1/db/project01.db_info
+C:/altera/13.1/incremental_db/compiled_partitions/project01.db_info
+C:/altera/13.1/project01.qpf
+C:/altera/13.1/project01.qsf
+F:/CSE 331 Computer Organization/homework/project01.v
+F:/CSE 331 Computer Organization/homework/project01_testbench.v
+c:/altera/13.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 8 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Tue Feb 21 21:49:59 2017
+Source archive file:	F:/CSE 331 Computer Organization/Projects/Project01/homework/Aizezi_Aikeboer_131044086.qar
+Archive was extracted into	F:/CSE 331 Computer Organization/Projects/Project01/homework/Aizezi_Aikeboer_131044086_restored/
+		 - successfully.

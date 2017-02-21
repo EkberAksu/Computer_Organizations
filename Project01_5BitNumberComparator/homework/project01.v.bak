@@ -1,0 +1,14 @@
+module project01(A[4:0], B[4:0],O[3:0]);
+	input  [4:0] A;
+	input  [4:0] B;
+	output [3:0] O;
+	output [1:0] OUT;
+	wire   [4:0]  I; //M
+	wire   [4:0]  J; //N
+	wire   [3:0]  K; //X
+	wire   [7:0]  X; //At
+	wire   [9:0]  Y; //T
+	wire   [3:0]  Z; //Final
+	
+	
+	
